@@ -24,11 +24,19 @@ To build and run **Focus Mode** from the source code:
 1. **Install Visual Studio 2022** (Community, Professional, or Enterprise).
 2. Make sure the following workloads are installed:
    - **.NET Desktop Development**
-   - **Windows Forms** or **WPF** (depending on your UI framework)
+   - **WPF Development**
 3. Clone this repository.
 4. Open the `.sln` file in Visual Studio 2022.
-5. Set the build configuration to **Release** or **Debug**.
-6. Hit **F5** or click **Start** to run the app.
+5. Include NuGet packages. This project requires the following package:
+
+   **Hardcodet.NotifyIcon.Wpf**   
+   You can install it via the NuGet Package Manager UI, or by using the Package Manager Console:
+   ````
+   Install-Package Hardcodet.NotifyIcon.Wpf
+   ````
+
+7. Set the build configuration to Release or Debug.
+8. Press F5 or click Start to run the app.
 
 Once running, the app will appear in your system tray.
 
